@@ -1,7 +1,7 @@
 name: Deploy Flask to an Azure Web Application
 
 env:
-  AZURE_WEBAPP_NAME: training-flask  # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: cbwham-training-flask  # set this to the name of your Azure Web App
   PYTHON_VERSION: '3.11'              # set this to the Python version to use
 
 on:
