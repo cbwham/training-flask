@@ -1,0 +1,3 @@
+#!/bin/sh
+
+flask run
