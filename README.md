@@ -18,7 +18,7 @@ az config set defaults.location=germanywestcentral
 
 ## Deploy to Azure
 
-Please read the according [documentation](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python) first!
+Please read the according documentation [on the Azure CLI](https://learn.microsoft.com/de-de/cli/azure/webapp?view=azure-cli-latest) and [on python apps](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python) first!
 
 ```shell
 az webapp up --location germanywestcentral --name my-training-flask --runtime PYTHON:3.11 --sku B1 --only-show-errors
