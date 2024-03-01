@@ -10,6 +10,7 @@ jsonschema-specifications==2023.12.1
 MarkupSafe==2.1.5
 mistune==3.0.2
 packaging==23.2
+py-healthcheck==1.10.1
 PyYAML==6.0.1
 referencing==0.33.0
 rpds-py==0.18.0

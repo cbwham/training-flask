@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 
 from flask import Flask, jsonify
-from flasgger import Swagger
+from healthcheck import HealthCheck
+#from flasgger import Swagger
 
 app = Flask(__name__)
-swagger = Swagger(app)
+#swagger = Swagger(app)
+health = HealthCheck()
+
+# Add a flask route to expose information
+app.add_url_rule('/healthcheck', 'healthcheck', view_func=lambda: health.run())
 
 @app.route("/")
 def hallo():
     return "yo"
-
-@app.route("/feierabend")
-def fa():
-    return "11 uhr 15"
 
 @app.route('/colors/<palette>/')
 def colors(palette):
@@ -55,4 +56,4 @@ def colors(palette):
 
     return jsonify(result)
 
-app.run(debug=True)
+app.run()
