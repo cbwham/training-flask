@@ -4,9 +4,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/hallo")
+@app.route("/")
 def hallo():
-    return "hallo"
+    return "yo"
 
 @app.route("/feierabend")
 def fa():
