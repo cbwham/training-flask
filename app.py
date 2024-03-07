@@ -13,4 +13,5 @@ app.add_url_rule('/healthcheck', 'healthcheck', view_func=lambda: health.run())
 def index():
     return '<!doctype html><html lang=en><head><meta charset=utf-8><title>CBW</title></head><body><p>FSH35!</p></body></html>'
 
-app.run()
+if __name__ == "__main__":
+    app.run()
