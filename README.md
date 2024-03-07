@@ -41,3 +41,9 @@ Note: `name` needs to be __unique__ Azure-wide!
   "src_path": "//Users//gretel//Sync//code//cbwham//training-flask"
 }
 ```
+
+### Connect
+
+According to the output the web application should now be [reachable](https://learn.microsoft.com/de-de/azure/app-service/overview-tls) at:
+
+https://cbwham-training-flask.azurewebsites.net/
