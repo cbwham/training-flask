@@ -20,7 +20,7 @@ az login
 Please read the according [documentation](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python) first!
 
 ```shell
-az webapp up --location germanywestcentral --name cbwham-training-flask --runtime PYTHON:3.11 --sku B1 --only-show-errors
+az webapp up --location germanywestcentral --name cbwham-training-flask --runtime PYTHON:3.11 --sku B1 --generic-configurations '{"healthCheckPath": "/healthcheck"}' --only-show-errors
 ```
 
 Note: `name` needs to be __unique__ Azure-wide!
