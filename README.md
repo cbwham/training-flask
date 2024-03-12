@@ -2,11 +2,27 @@
 
 **Flask** is a Python [micro framework](https://flask.palletsprojects.com/en/3.0.x/) for building web applications.
 
-# Demo Application
+# Local Development
+
+## Requirements
+
+ * `terminal`
+ * `git`
+ * `python3`
+
+## Windows
+
+```shell
+git clone https://github.com/cbwham/training-flask.git
+cd training-flask
+.venv\Scripts\activate.bat
+pip install -U -r requirements.txt
+flask run
+```
+
+# Cloud: Azure
 
 ## Prerequisite
-
-A working terminal running a shell is required.
 
 To begin please install the [`Azure CLI`](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
 ) and succeed to logging in:
