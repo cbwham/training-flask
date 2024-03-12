@@ -15,7 +15,19 @@
 ```shell
 git clone https://github.com/cbwham/training-flask.git
 cd training-flask
+python -m venv .venv
 .venv\Scripts\activate.bat
+pip install -U -r requirements.txt
+flask run
+```
+
+## Linux
+
+```shell
+git clone https://github.com/cbwham/training-flask.git
+cd training-flask
+python3 -m venv .venv
+. .venv/bin/activate # https://linuxize.com/post/bash-source-command/
 pip install -U -r requirements.txt
 flask run
 ```
