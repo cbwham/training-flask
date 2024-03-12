@@ -2,15 +2,28 @@
 
 **Flask** is a Python [micro framework](https://flask.palletsprojects.com/en/3.0.x/) for building web applications.
 
-# Local Development
+## Local Development
 
-## Requirements
+### Requirements
 
  * `terminal`
  * `git`
  * `python3`
 
-## Windows
+### How get this running
+
+* Clone this repository
+* Change directory
+* Create new [`virtualenv`](https://virtualenv.pypa.io/en/latest/)
+* [Activate](https://pip.pypa.io/en/stable/cli/pip_install/#options) `virtualenv`
+* [Install](https://pip.pypa.io/en/stable/cli/pip_install/#options) required Python packages (into the `virtualenv`)
+* Run `Flask` application
+* Access service via `HTTP`
+* Fun&Freizeit
+
+## Examples
+
+### Windows
 
 ```shell
 git clone https://github.com/cbwham/training-flask.git
@@ -21,20 +34,17 @@ pip install -U -r requirements.txt
 flask run
 ```
 
-## Linux
+### Linux, MacOS
+
+Just the activation of the virutalenv is different:
 
 ```shell
-git clone https://github.com/cbwham/training-flask.git
-cd training-flask
-python3 -m venv .venv
-. .venv/bin/activate # https://linuxize.com/post/bash-source-command/
-pip install -U -r requirements.txt
-flask run
+. .venv/bin/activate # https://linuxize.com/post/
 ```
 
-# Cloud: Azure
+## Cloud: Azure
 
-## Prerequisite
+### Prerequisite
 
 To begin please install the [`Azure CLI`](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
 ) and succeed to logging in:
@@ -43,7 +53,7 @@ To begin please install the [`Azure CLI`](https://learn.microsoft.com/en-us/cli/
 az login
 ```
 
-## Deploy to Azure
+### Deploy to Azure
 
 Please read the according [documentation](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python) first!
 
@@ -53,7 +63,7 @@ az webapp up --location germanywestcentral --name cbwham-training-flask --runtim
 
 Note: `name` needs to be __unique__ Azure-wide!
 
-### Example Output
+#### Example Output
 
 ```json
 {
