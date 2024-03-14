@@ -10,7 +10,7 @@ app = Flask(__name__)
 health = HealthCheck()
 
 # Add a flask route to expose information
-app.add_url_rule('/healthcheck', 'healthcheck', view_func=health.run())
+app.add_url_rule('/healthcheck', 'healthcheck', view_func=lambda: health.run()) # pylint: disable=W0108
 
 
 # "index"
