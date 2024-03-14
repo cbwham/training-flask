@@ -14,23 +14,22 @@ app.add_url_rule('/healthcheck', 'healthcheck', view_func=health.run())
 
 
 # "index"
-@app.route("/")
+@app.route("/") # noqa: DC002
 def index():
     return '<!doctype html><html lang=en><head><meta charset=utf-8><title>CBW</title></head><body><p>FSH35!</p></body></html>'  # string
 
 
 # dynamic content
-@app.route('/name/<name>')
+@app.route('/name/<name>') # noqa: DC002
 def show(name):
     return f'<!doctype html><html lang=en><head><meta charset=utf-8><title>CBW - Azure Wars</title></head><body ><p>Greetings, Master {name}!</p></body></html>'  # string
-
 
 # happy day?
 def is_friday(dt):
     return dt.weekday() == 4  # 0=monday
 
 
-@app.route("/pause")
+@app.route("/pause") # noqa: DC002
 def pause():
     """
     Returns True if the current time is in the following ranges: 9:30-9:45, 11:15-11:30, 12:15-12:45 on Fridays
