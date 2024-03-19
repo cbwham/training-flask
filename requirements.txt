@@ -1,3 +1,5 @@
 pip
 Flask
+flask-debugtoolbar
 py-healthcheck
+python-dotenv
